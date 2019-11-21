@@ -1,0 +1,5 @@
+chefdk:
+  build: .
+  volumes:
+    - ./projects:/projects
+    - /var/run/docker.sock:/var/run/docker.sock
