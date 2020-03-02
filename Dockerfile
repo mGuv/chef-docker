@@ -9,3 +9,6 @@ RUN apt-get update
 RUN apt-get install -y docker-ce
 
 RUN gem install kitchen-docker
+
+COPY .ssh /root/.ssh
+RUN chmod 600 -R /root/.ssh
